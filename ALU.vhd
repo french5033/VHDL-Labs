@@ -1,0 +1,58 @@
+-- Student name: Stephanie French
+-- Student ID number: 62326647
+
+LIBRARY IEEE; 
+USE IEEE.std_logic_unsigned.all;
+use work.Glob_dcls.all;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+
+-- 8 bit ALU
+entity ALU is 
+  PORT( op_code  : in ALU_opcode; 
+	in0, in1 : in word;	
+        C	 : in shamt;  -- shift amount	
+        ALUout   : out word; 
+	Zero     : out std_logic );
+end ALU;
+
+architecture ALU_arch of ALU is
+signal current_value: word;
+signal s_zero: word; 
+
+begin
+	process
+	begin
+		s_zero <= (others => '0');
+		if in0 = (in0'range => 'U') then current_value <= (others => '0');
+		elsif in1 = (in1'range => 'U') then current_value <= (others => '0');
+		-- ADD
+		elsif op_code = "000" THEN current_value <= in0 + in1; wait for 10 ps;
+		-- SUB
+		elsif op_code = "001" THEN current_value <= in0 - in1;  wait for 10 ps;
+		-- SLL
+		elsif op_code = "010" THEN
+			current_value <= std_logic_vector(shift_left(unsigned(in0), to_integer(unsigned(C))));
+			wait for 10 ps;
+		-- SRL
+		elsif op_code = "011" THEN
+			current_value <= std_logic_vector(shift_right(unsigned(in0), to_integer(unsigned(C))));
+			wait for 10 ps; 
+		-- AND
+		elsif op_code = "100" THEN current_value <= in0 and in1; wait for 10 ps;
+		-- OR
+		elsif op_code = "101" THEN current_value <= in0 or in1; wait for 10 ps;
+		-- XOR
+		elsif op_code = "110" THEN current_value <= in0 xor in1; wait for 10 ps;
+		-- NOR
+		elsif op_code = "111" THEN current_value <= in0 nor in1; wait for 10 ps;
+		END IF;
+
+		wait for 1 ps;
+		if current_value = s_zero then Zero <= '1';
+		else Zero <= '0';
+		ALUOut <= current_value;
+		END IF;
+	end process;	
+end ALU_arch;
