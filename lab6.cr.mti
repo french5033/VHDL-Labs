@@ -1,0 +1,86 @@
+C:/Users/aarcane/Desktop/lab6/CPU.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\aarcane\Desktop\lab6\CPU.vhd}
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package Glob_dcls
+-- Compiling entity CPU
+-- Compiling architecture CPU_arch of CPU
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/Glob_dcls.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aarcane/Desktop/lab6/Glob_dcls.vhd
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package Glob_dcls
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/CPU_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\aarcane\Desktop\lab6\CPU_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package Glob_dcls
+-- Compiling entity CPU_tb
+-- Compiling architecture CPU_test of CPU_tb
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aarcane/Desktop/lab6/ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package Glob_dcls
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture ALU_arch of ALU
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aarcane/Desktop/lab6/util.vhd
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Glob_dcls
+-- Compiling entity mux_word_4
+-- Compiling architecture mux_word_4_arch of mux_word_4
+-- Compiling entity mux_reg_4
+-- Compiling architecture mux_reg_4_arch of mux_reg_4
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/RegFile.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aarcane/Desktop/lab6/RegFile.vhd
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Glob_dcls
+-- Compiling entity RegFile
+-- Compiling architecture behavioral of RegFile
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/datapath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aarcane/Desktop/lab6/datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package Glob_dcls
+-- Compiling entity datapath
+-- Compiling architecture datapath_arch of datapath
+
+} {} {}} C:/Users/aarcane/Desktop/lab6/mem.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/aarcane/Desktop/lab6/mem.vhd
+Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package Glob_dcls
+-- Compiling entity mem
+-- Compiling architecture mem_arch of mem
+
+} {} {}}

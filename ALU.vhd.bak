@@ -31,11 +31,11 @@ begin
 		elsif op_code = "001" THEN current_value <= in0 - in1;  wait for 10 ps;
 		-- SLL
 		elsif op_code = "010" THEN
-			current_value <= std_logic_vector(shift_left(unsigned(in1), to_integer(unsigned(C))));
+			current_value <= std_logic_vector(shift_left(unsigned(in0), to_integer(unsigned(C))));
 			wait for 10 ps;
 		-- SRL
 		elsif op_code = "011" THEN
-			current_value <= std_logic_vector(shift_right(unsigned(in1), to_integer(unsigned(C))));
+			current_value <= std_logic_vector(shift_right(unsigned(in0), to_integer(unsigned(C))));
 			wait for 10 ps; 
 		-- AND
 		elsif op_code = "100" THEN current_value <= in0 and in1; wait for 10 ps;

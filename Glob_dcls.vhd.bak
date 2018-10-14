@@ -21,12 +21,12 @@ package Glob_dcls is
 	subtype target is std_logic_vector(target_size-1 downto 0);
 	constant shamt_size : natural := 5;
 	subtype shamt is std_logic_vector(shamt_size-1 downto 0);
-	constant func_size : natural := 3;
+	constant func_size : natural := 6;
 	subtype func is std_logic_vector(func_size-1 downto 0);
 	
 
 	subtype ALU_opcode is std_logic_vector(2 downto 0);
-  subtype RAM_ADDR is integer range 0 to 31;
+  subtype RAM_ADDR is integer range 0 to 63;
   type RAM is array (RAM_ADDR) of word;
 
 -- Constants   

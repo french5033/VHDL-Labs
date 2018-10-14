@@ -1,0 +1,44 @@
+-- Stephanie French -- 62326647
+LIBRARY IEEE; 
+USE IEEE.std_logic_1164.all;
+USE IEEE.std_logic_unsigned.all; 
+USE work.Glob_dcls.all;
+
+entity CPU_tb is
+end CPU_tb;
+
+architecture CPU_test of CPU_tb is
+-- component declaration
+	-- CPU (you just built)
+component cpu
+  port ( clk: in std_logic;
+    	reset_N : in std_logic
+); -- active-low signal for reset
+end component;
+-- component specification
+-- signal declaration
+	-- You'll need clock and reset.
+signal clk: std_logic;
+signal reset_N: std_logic;
+
+begin
+PROCESS
+BEGIN
+	clk <= '0';
+	wait for 20 ns;
+	clk <= '1';
+	wait for 20 ns;
+	clk <= '0'; --Superfluous, but more clear.
+END PROCESS;
+
+PROCESS
+BEGIN
+	reset_N <= '0';
+	wait for 1 ns;
+	reset_N <= '1';
+	wait for 1 ns;
+	reset_N <= '0';
+	wait for 999999999 ns;
+END PROCESS;
+
+end CPU_test;

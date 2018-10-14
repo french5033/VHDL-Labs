@@ -1,8 +1,5 @@
-LIBRARY IEEE; 
-USE IEEE.std_logic_1164.all; 
-USE IEEE.std_logic_unsigned.all;
-USE IEEE.numeric_std.all; 
-USE work.Glob_dcls.all;
+LIBRARY IEEE; USE IEEE.std_logic_1164.all; USE IEEE.std_logic_unsigned.all;
+USE IEEE.numeric_std.all; USE work.Glob_dcls.all;
 
 ENTITY mem IS
    PORT (MemRead	: IN std_logic; 

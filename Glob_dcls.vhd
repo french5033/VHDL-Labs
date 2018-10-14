@@ -1,5 +1,5 @@
--- Student name: What is your name?
--- Student ID number: And your ID?
+-- Student name: Stephanie French 
+-- Student ID number: 62326647
 
 LIBRARY IEEE; 
 use ieee.std_logic_1164.all;
@@ -26,7 +26,7 @@ package Glob_dcls is
 	
 
 	subtype ALU_opcode is std_logic_vector(2 downto 0);
-  subtype RAM_ADDR is integer range 0 to 31;
+  subtype RAM_ADDR is integer range 0 to 63;
   type RAM is array (RAM_ADDR) of word;
 
 -- Constants   
